@@ -1,0 +1,36 @@
+{
+  "tshy": {
+    "dialects": [
+      "esm"
+    ],
+    "exports": {
+      "./package.json": "./package.json"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "prettier": "^2.8.8",
+    "tshy": "^1.8.1",
+    "typescript": "^5.3.2"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 75,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf"
+  },
+  "scripts": {
+    "prepare": "tshy",
+    "test": "node ./y.mjs",
+    "pretest": "npm run prepare"
+  },
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "type": "module"
+}
